@@ -1,6 +1,7 @@
 import unittest
 
-from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8
+from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
+    problem_10
 
 
 class EulerTest(unittest.TestCase):
@@ -61,4 +62,11 @@ class EulerTest(unittest.TestCase):
 71636269561882670428252483600823257530420752963450""",
             4), 5832)
 
+    def test_problem9(self):
+        self.assertEquals(problem_9.Solution().get_special_pythagorean_triplet(12), 60)
+        self.assertEquals(problem_9.Solution().get_special_pythagorean_triplet(1000), 31875000)
+
+    def test_problem10(self):
+        self.assertEquals(problem_10.Solution().get_sum_of_primes(10), 17)
+        self.assertEquals(problem_10.Solution().get_sum_of_primes(2_000_000), 142913828922)
 

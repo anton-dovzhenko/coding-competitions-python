@@ -1,6 +1,3 @@
-import string
-
-
 class Solution:
 
     def get_largest_product_in_a_series(self, number, digits):
