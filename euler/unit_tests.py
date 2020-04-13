@@ -1,7 +1,7 @@
 import unittest
 
 from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
-    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15
+    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16
 
 
 class EulerTest(unittest.TestCase):
@@ -206,5 +206,7 @@ class EulerTest(unittest.TestCase):
         self.assertEquals(problem_15.Solution().get_lattice_paths(2), 6)
         self.assertEquals(problem_15.Solution().get_lattice_paths(20), 137846528820)
 
-
+    def test_problem16(self):
+        self.assertEquals(problem_16.Solution().get_power_digit_sum(15), 26)
+        self.assertEquals(problem_16.Solution().get_power_digit_sum(1000), 1366)
 
