@@ -1,7 +1,7 @@
 import unittest
 
 from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
-    problem_10, problem_12, problem_13, problem_11, problem_14
+    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15
 
 
 class EulerTest(unittest.TestCase):
@@ -201,6 +201,10 @@ class EulerTest(unittest.TestCase):
 
     def test_problem14(self):
         self.assertEquals(problem_14.Solution().get_longest_collatz_sequence(1_000_000), 837799)
+
+    def test_problem15(self):
+        self.assertEquals(problem_15.Solution().get_lattice_paths(2), 6)
+        self.assertEquals(problem_15.Solution().get_lattice_paths(20), 137846528820)
 
 
 
