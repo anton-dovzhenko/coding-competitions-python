@@ -2,7 +2,7 @@ import unittest
 
 from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
-    problem_19
+    problem_19, problem_20
 
 
 class EulerTest(unittest.TestCase):
@@ -242,3 +242,9 @@ class EulerTest(unittest.TestCase):
 
     def test_problem19(self):
         self.assertEquals(problem_19.Solution().get_counting_sundays(), 171)
+
+    def test_problem20(self):
+        self.assertEquals(problem_20.Solution().get_factorial_digit_sum(10), 27)
+        self.assertEquals(problem_20.Solution().get_factorial_digit_sum(100), 648)
+
+
