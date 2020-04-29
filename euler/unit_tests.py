@@ -1,7 +1,7 @@
 import unittest
 
 from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
-    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16
+    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17
 
 
 class EulerTest(unittest.TestCase):
@@ -209,4 +209,8 @@ class EulerTest(unittest.TestCase):
     def test_problem16(self):
         self.assertEquals(problem_16.Solution().get_power_digit_sum(15), 26)
         self.assertEquals(problem_16.Solution().get_power_digit_sum(1000), 1366)
+
+    def test_problem16(self):
+        self.assertEquals(problem_17.Solution().get_number_letter_counts(5), 19)
+        self.assertEquals(problem_17.Solution().get_number_letter_counts(1000), 21124)
 
