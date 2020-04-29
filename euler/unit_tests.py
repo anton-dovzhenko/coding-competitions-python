@@ -1,7 +1,7 @@
 import unittest
 
 from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
-    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17
+    problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18
 
 
 class EulerTest(unittest.TestCase):
@@ -210,7 +210,33 @@ class EulerTest(unittest.TestCase):
         self.assertEquals(problem_16.Solution().get_power_digit_sum(15), 26)
         self.assertEquals(problem_16.Solution().get_power_digit_sum(1000), 1366)
 
-    def test_problem16(self):
+    def test_problem17(self):
         self.assertEquals(problem_17.Solution().get_number_letter_counts(5), 19)
         self.assertEquals(problem_17.Solution().get_number_letter_counts(1000), 21124)
+
+    def test_problem18(self):
+        self.assertEquals(problem_18.Solution().get_maximum_path_sum_i(
+            """3
+            7 4
+            2 4 6
+            8 5 9 3"""
+        ), 23)
+        self.assertEquals(problem_18.Solution().get_maximum_path_sum_i(
+            """75
+            95 64
+            17 47 82
+            18 35 87 10
+            20 04 82 47 65
+            19 01 23 75 03 34
+            88 02 77 73 07 63 67
+            99 65 04 28 06 16 70 92
+            41 41 26 56 83 40 80 70 33
+            41 48 72 33 47 32 37 16 94 29
+            53 71 44 65 25 43 91 52 97 51 14
+            70 11 33 28 77 73 17 78 39 68 17 57
+            91 71 52 38 17 14 91 43 58 50 27 29 48
+            63 66 04 68 89 53 67 30 73 16 69 87 40 31
+            04 62 98 27 23 09 70 98 73 93 38 53 60 04 23"""
+        ), 1074)
+
 
