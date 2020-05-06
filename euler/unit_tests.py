@@ -2,7 +2,7 @@ import unittest
 
 from euler import problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
-    problem_19, problem_20, problem_21
+    problem_19, problem_20, problem_21, problem_22
 
 
 class EulerTest(unittest.TestCase):
@@ -251,3 +251,8 @@ class EulerTest(unittest.TestCase):
         self.assertEquals(problem_21.Solution().sum_factors(15), 9)
         self.assertEquals(problem_21.Solution().sum_factors(25), 6)
         self.assertEquals(problem_21.Solution().sum_amicable_numbers(10000), 31626)
+
+    def test_problem22(self):
+        with open("resources/p022_names.txt", 'r') as content_file:
+            content = content_file.read()
+        self.assertEquals(problem_22.Solution().sum_names_scores(content), 871198282)
