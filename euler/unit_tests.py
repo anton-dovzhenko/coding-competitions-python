@@ -1,8 +1,9 @@
 import unittest
 
-from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, problem_9, \
+from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, \
+    problem_9, \
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
-    problem_19, problem_20, problem_21, problem_22, problem_23
+    problem_19, problem_20, problem_21, problem_22, problem_23, problem_24
 
 
 class EulerTest(unittest.TestCase):
@@ -259,3 +260,13 @@ class EulerTest(unittest.TestCase):
 
     def test_problem23(self):
         self.assertEquals(problem_23.Solution().sum_non_abudant_sums(28123), 4179871)
+
+    def test_problem24(self):
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 0), "0123456789")
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 23688), "0167938542")
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 362880), "0987654321")
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 362881), "1023456789")
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 1000000), "2783915460")
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 1000001), "2783915604")
+        self.assertEquals(problem_24.Solution().get_lexicographic_permutation(10, 3628800), "9876543210")
+
