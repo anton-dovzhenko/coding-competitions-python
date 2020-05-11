@@ -3,7 +3,7 @@ import unittest
 from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, problem_6, problem_7, problem_8, \
     problem_9, \
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
-    problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25
+    problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26
 
 
 class EulerTest(unittest.TestCase):
@@ -274,4 +274,10 @@ class EulerTest(unittest.TestCase):
         self.assertEquals(problem_25.Solution().get_n_digit_fibonacci_number(3), 12)
         self.assertEquals(problem_25.Solution().get_n_digit_fibonacci_number(4), 17)
         self.assertEquals(problem_25.Solution().get_n_digit_fibonacci_number(1000), 4782)
+
+    def test_problem26(self):
+        self.assertEquals(problem_26.Solution().get_max_recurring_cycle(10), 7)
+        self.assertEquals(problem_26.Solution().get_max_recurring_cycle(100), 97)
+        self.assertEquals(problem_26.Solution().get_max_recurring_cycle(1000), 983)
+
 
