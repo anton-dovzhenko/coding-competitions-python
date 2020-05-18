@@ -4,7 +4,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_9, \
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
-    problem_28, problem_29, problem_30
+    problem_28, problem_29, problem_30, problem_31
 
 
 class EulerTest(unittest.TestCase):
@@ -297,4 +297,9 @@ class EulerTest(unittest.TestCase):
     def test_problem30(self):
         self.assertEquals(problem_30.Solution.get_digit_fifth_powers(4), 19316)
         self.assertEquals(problem_30.Solution.get_digit_fifth_powers(5), 443839)
+
+    def test_problem31(self):
+        self.assertEquals(problem_31.Solution.get_coin_sums([1, 2, 5, 10, 20, 50, 100, 200], 200), 73682)
+
+
 
