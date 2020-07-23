@@ -28,7 +28,7 @@ class Solution:
             L = int(math.log10(p)) + 1
             circular = True
             for i in range(1, L):
-                p = (p % 10) * 10 ** (L - 1) + int(math.floor(p / 10))
+                p = (p % 10) * 10 ** (L - 1) + p // 10
                 if p not in primes:
                     circular = False
                     break

@@ -4,7 +4,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_9, \
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
-    problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36
+    problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37
 
 
 class EulerTest(unittest.TestCase):
@@ -314,3 +314,6 @@ class EulerTest(unittest.TestCase):
     def test_problem36(self):
         self.assertEquals(problem_36.Solution.get_sum_of_double_based_palindromes(100), 157)
         self.assertEquals(problem_36.Solution.get_sum_of_double_based_palindromes(1_000_000), 872187)
+
+    def test_problem37(self):
+        self.assertEquals(problem_37.Solution.get_truncatable_primes(11), 748317)

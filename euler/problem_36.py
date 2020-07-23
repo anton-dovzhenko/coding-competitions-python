@@ -10,7 +10,7 @@ class Solution:
 
     @classmethod
     def is_palindrome(cls, s: str):
-        for i in range(0, int(len(s) / 2)):
+        for i in range(0, len(s) // 2):
             if s[i] != s[len(s) - 1 - i]:
                 return False
         return True
