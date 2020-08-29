@@ -5,7 +5,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
-    problem_38, problem_39, problem_41
+    problem_38, problem_39, problem_41, problem_42
 
 
 class EulerTest(unittest.TestCase):
@@ -327,5 +327,10 @@ class EulerTest(unittest.TestCase):
 
     def test_problem41(self):
         self.assertEquals(problem_41.Solution.find_largest_pandigital_prime(), 7652413)
+
+    def test_problem42(self):
+        with open("resources/p042_words.txt", 'r') as content_file:
+            content = content_file.read()
+            self.assertEquals(problem_42.Solution.get_number_of_coded_triangle_numbers(content), 162)
 
 
