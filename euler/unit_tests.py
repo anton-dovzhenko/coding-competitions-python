@@ -5,7 +5,8 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_10, problem_12, problem_13, problem_11, problem_14, problem_15, problem_16, problem_17, problem_18, \
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
-    problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49
+    problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
+    problem_58, problem_53, problem_55
 
 
 class EulerTest(unittest.TestCase):
@@ -350,5 +351,14 @@ class EulerTest(unittest.TestCase):
 
     def test_problem49(self):
         self.assertEquals(problem_49.Solution.get_prime_permutations(), ['148748178147', '296962999629'])
+
+    def test_problem53(self):
+        self.assertEquals(problem_53.Solution.get_count_greater_than_mil(), 4075)
+
+    def test_problem55(self):
+        self.assertEquals(problem_55.Solution.get_lychrel_numbers_count(), 249)
+
+    def test_problem58(self):
+        self.assertEquals(problem_58.Solution.get_spiral_with_prime_ratio_below_10_ptc(), 26241)
 
 

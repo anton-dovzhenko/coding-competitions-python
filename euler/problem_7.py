@@ -1,7 +1,6 @@
 import math
 
 
-
 class Solution:
 
     def get_prime(self, n):
