@@ -6,7 +6,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
-    problem_58, problem_53, problem_55, problem_34
+    problem_58, problem_53, problem_55, problem_34, problem_40
 
 
 class EulerTest(unittest.TestCase):
@@ -328,6 +328,9 @@ class EulerTest(unittest.TestCase):
 
     def test_problem39(self):
         self.assertEquals(problem_39.Solution.get_max_solutions(1000), 840)
+
+    def test_problem40(self):
+        self.assertEquals(problem_40.Solution.get_champernownes_constant(), 210)
 
     def test_problem41(self):
         self.assertEquals(problem_41.Solution.find_largest_pandigital_prime(), 7652413)
