@@ -6,7 +6,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
-    problem_58, problem_53, problem_55, problem_34, problem_40
+    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43
 
 
 class EulerTest(unittest.TestCase):
@@ -339,6 +339,9 @@ class EulerTest(unittest.TestCase):
         with open("resources/p042_words.txt", 'r') as content_file:
             content = content_file.read()
             self.assertEquals(problem_42.Solution.get_number_of_coded_triangle_numbers(content), 162)
+
+    def test_problem43(self):
+        self.assertEquals(problem_43.Solution.get_sum_of_sub_string_divisible_pandigitals(), 16695334890)
 
     def test_problem44(self):
         self.assertEquals(problem_44.Solution.get_min_pentagon_distance(), 5482660)
