@@ -6,7 +6,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
-    problem_58, problem_53, problem_55
+    problem_58, problem_53, problem_55, problem_34
 
 
 class EulerTest(unittest.TestCase):
@@ -308,6 +308,9 @@ class EulerTest(unittest.TestCase):
 
     def test_problem33(self):
         self.assertEquals(problem_33.Solution.get_digit_cancelling_fractions(), 100)
+
+    def test_problem34(self):
+        self.assertEquals(problem_34.Solution.get_digit_factorials(), 40730)
 
     def test_problem35(self):
         self.assertEquals(problem_35.Solution.get_circular_primes(100), 13)
