@@ -6,7 +6,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
-    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43
+    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57
 
 
 class EulerTest(unittest.TestCase):
@@ -366,6 +366,9 @@ class EulerTest(unittest.TestCase):
 
     def test_problem55(self):
         self.assertEquals(problem_55.Solution.get_lychrel_numbers_count(), 249)
+
+    def test_problem57(self):
+        self.assertEquals(problem_57.Solution.get_specific_square_root_convergents(100), 153)
 
     def test_problem58(self):
         self.assertEquals(problem_58.Solution.get_spiral_with_prime_ratio_below_10_ptc(), 26241)
