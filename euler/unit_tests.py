@@ -6,7 +6,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
-    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57
+    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57, problem_46
 
 
 class EulerTest(unittest.TestCase):
@@ -348,6 +348,9 @@ class EulerTest(unittest.TestCase):
 
     def test_problem45(self):
         self.assertEquals(problem_45.Solution.find_same_number(), 1533776805)
+
+    def test_problem46(self):
+        self.assertEquals(problem_46.Solution.get_goldbach_conjecture_min_contradiction(10_000), 5777)
 
     def test_problem47(self):
         self.assertEquals(problem_47.Solution.get_first_consequent_number(2), 14)
