@@ -6,7 +6,8 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_19, problem_20, problem_21, problem_22, problem_23, problem_24, problem_25, problem_26, problem_27, \
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
-    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57, problem_46, problem_50
+    problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57, problem_46, problem_50, \
+    problem_52, problem_54
 
 
 class EulerTest(unittest.TestCase):
@@ -369,8 +370,16 @@ class EulerTest(unittest.TestCase):
         self.assertEquals(problem_50.Solution.get_consecutive_prime_sum(1000), 953)
         self.assertEquals(problem_50.Solution.get_consecutive_prime_sum(1_000_000), 997651)
 
+    def test_problem52(self):
+        self.assertEquals(problem_52.Solution.get_permuted_multiples(2), 125874)
+        self.assertEquals(problem_52.Solution.get_permuted_multiples(6), 142857)
+
     def test_problem53(self):
         self.assertEquals(problem_53.Solution.get_count_greater_than_mil(), 4075)
+
+    def test_problem54(self):
+        self.assertEquals(problem_54.Solution.count_wins('resources/p054_poker.txt', 1), 376)
+        self.assertEquals(problem_54.Solution.count_wins('resources/p054_poker.txt', 2), 1000 - 376)
 
     def test_problem55(self):
         self.assertEquals(problem_55.Solution.get_lychrel_numbers_count(), 249)
