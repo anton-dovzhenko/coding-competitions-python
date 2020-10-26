@@ -7,7 +7,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
     problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57, problem_46, problem_50, \
-    problem_52, problem_54, problem_67
+    problem_52, problem_54, problem_67, problem_56
 
 
 class EulerTest(unittest.TestCase):
@@ -383,6 +383,10 @@ class EulerTest(unittest.TestCase):
 
     def test_problem55(self):
         self.assertEquals(problem_55.Solution.get_lychrel_numbers_count(), 249)
+
+    def test_problem56(self):
+        self.assertEquals(problem_56.Solution.get_powerful_digit_sum(10, 2), 9)
+        self.assertEquals(problem_56.Solution.get_powerful_digit_sum(100, 100), 972)
 
     def test_problem57(self):
         self.assertEquals(problem_57.Solution.get_specific_square_root_convergents(100), 153)
