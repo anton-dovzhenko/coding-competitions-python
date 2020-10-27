@@ -7,7 +7,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
     problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57, problem_46, problem_50, \
-    problem_52, problem_54, problem_67, problem_56, problem_59
+    problem_52, problem_54, problem_67, problem_56, problem_59, problem_51
 
 
 class EulerTest(unittest.TestCase):
@@ -369,6 +369,12 @@ class EulerTest(unittest.TestCase):
         self.assertEquals(problem_50.Solution.get_consecutive_prime_sum(100), 41)
         self.assertEquals(problem_50.Solution.get_consecutive_prime_sum(1000), 953)
         self.assertEquals(problem_50.Solution.get_consecutive_prime_sum(1_000_000), 997651)
+
+    def test_problem51(self):
+        self.assertEquals(problem_51.Solution.get_prime_digit_replacements(100, 5), 11)
+        self.assertEquals(problem_51.Solution.get_prime_digit_replacements(100, 6), 13)
+        self.assertEquals(problem_51.Solution.get_prime_digit_replacements(50_000, 7), 56003)
+        self.assertEquals(problem_51.Solution.get_prime_digit_replacements(500_000, 8), 121313)
 
     def test_problem52(self):
         self.assertEquals(problem_52.Solution.get_permuted_multiples(2), 125874)
