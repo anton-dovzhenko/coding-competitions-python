@@ -68,7 +68,6 @@ class Solution2:
         return 1 + self._ladderLength(next_begin_words, end_word, d)
 
 
-
 class SolutionTest(unittest.TestCase):
 
     def test_ladderLength1(self):
