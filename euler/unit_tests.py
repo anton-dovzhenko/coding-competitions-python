@@ -7,7 +7,7 @@ from euler import utils, problem_1, problem_2, problem_3, problem_4, problem_5, 
     problem_28, problem_29, problem_30, problem_31, problem_32, problem_33, problem_35, problem_36, problem_37, \
     problem_38, problem_39, problem_41, problem_42, problem_44, problem_45, problem_47, problem_48, problem_49, \
     problem_58, problem_53, problem_55, problem_34, problem_40, problem_43, problem_57, problem_46, problem_50, \
-    problem_52, problem_54, problem_67, problem_56, problem_59, problem_51, problem_61, problem_62
+    problem_52, problem_54, problem_67, problem_56, problem_59, problem_51, problem_61, problem_62, problem_63
 
 
 class EulerTest(unittest.TestCase):
@@ -409,6 +409,9 @@ class EulerTest(unittest.TestCase):
     def test_problem62(self):
         self.assertEquals(problem_62.Solution.get_cubic_permutations(3), 41063625)
         self.assertEquals(problem_62.Solution.get_cubic_permutations(5), 127035954683)
+
+    def test_problem63(self):
+        self.assertEquals(problem_63.Solution.solve(), 49)
 
     def test_problem67(self):
         self.assertEquals(problem_67.Solution.get_max_path_sum_ii_from_file('resources/p067_triangle_test.txt'), 23)
