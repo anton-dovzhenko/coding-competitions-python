@@ -20,7 +20,7 @@ class SolutionTest(unittest.TestCase):
 
     def test_finalValueAfterOperations(self):
         self.assertEquals(Solution().finalValueAfterOperations(["--X", "X++", "X++"]), 1)
-        self.assertEquals(Solution().finalValueAfterOperations(["++X","++X","X++"]), 3)
-        self.assertEquals(Solution().finalValueAfterOperations(["X++","++X","--X","X--"]), 0)
+        self.assertEquals(Solution().finalValueAfterOperations(["++X", "++X", "X++"]), 3)
+        self.assertEquals(Solution().finalValueAfterOperations(["X++", "++X", "--X", "X--"]), 0)
 
 
