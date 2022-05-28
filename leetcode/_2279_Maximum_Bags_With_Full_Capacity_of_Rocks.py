@@ -21,6 +21,6 @@ class Solution:
 class SolutionTest(unittest.TestCase):
 
     def test_latestDayToCross(self):
-        self.assertEquals(Solution().maximumBags([2, 3, 4, 5], [1, 2, 4, 4], 2), 3)
-        self.assertEquals(Solution().maximumBags([10, 2, 2], [2, 2, 0], 100), 3)
+        self.assertEqual(Solution().maximumBags([2, 3, 4, 5], [1, 2, 4, 4], 2), 3)
+        self.assertEqual(Solution().maximumBags([10, 2, 2], [2, 2, 0], 100), 3)
 
