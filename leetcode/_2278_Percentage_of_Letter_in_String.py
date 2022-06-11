@@ -9,7 +9,7 @@ class Solution:
 
 class SolutionTest(unittest.TestCase):
 
-    def test_latestDayToCross(self):
+    def test_percentageLetter(self):
         self.assertEqual(Solution().percentageLetter("foobar", "o"), 33)
         self.assertEqual(Solution().percentageLetter("jjjj", "k"), 0)
 

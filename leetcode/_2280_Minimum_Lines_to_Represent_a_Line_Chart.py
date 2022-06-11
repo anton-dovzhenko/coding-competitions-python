@@ -19,7 +19,7 @@ class Solution:
 
 class SolutionTest(unittest.TestCase):
 
-    def test_latestDayToCross(self):
+    def test_minimumLines(self):
         self.assertEqual(Solution().minimumLines([[1, 7], [2, 6], [3, 5], [4, 4], [5, 4], [6, 3], [7, 2], [8, 1]]), 3)
         self.assertEqual(Solution().minimumLines([[3, 4], [1, 2], [7, 8], [2, 3]]), 1)
         self.assertEqual(
