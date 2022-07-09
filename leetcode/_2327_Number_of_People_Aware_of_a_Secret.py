@@ -20,7 +20,7 @@ class Solution:
 
 class SolutionTest(unittest.TestCase):
 
-    def test_maximumsSplicedArray(self):
+    def test_peopleAwareOfSecret(self):
         self.assertEqual(Solution().peopleAwareOfSecret(6, 2, 4), 5)
         self.assertEqual(Solution().peopleAwareOfSecret(4, 1, 3), 6)
         self.assertEqual(Solution().peopleAwareOfSecret(684, 18, 496), 653668527)

@@ -45,7 +45,7 @@ class Solution:
 
 class SolutionTest(unittest.TestCase):
 
-    def test_maximumsSplicedArray(self):
+    def test_spiralMatrix(self):
         self.assertEqual(Solution().spiralMatrix(3, 5, ListNode.from_list([3, 0, 2, 6, 8, 1, 7, 9, 4, 2, 5, 5, 0])),
                          [[3, 0, 2, 6, 8], [5, 0, -1, -1, 1], [5, 2, 4, 9, 7]])
         self.assertEqual(Solution().spiralMatrix(1, 4, ListNode.from_list([0, 1, 2])), [[0, 1, 2, -1]])

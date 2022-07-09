@@ -15,7 +15,7 @@ class Solution:
 
 class SolutionTest(unittest.TestCase):
 
-    def test_maximumsSplicedArray(self):
+    def test_decodeMessage(self):
         self.assertEqual(Solution().decodeMessage("the quick brown fox jumps over the lazy dog", "vkbs bs t suepuv"),
                          "this is a secret")
         self.assertEqual(Solution().decodeMessage("eljuxhpwnyrdgtqkviszcfmabo", "zwx hnfx lqantp mnoeius ycgk vcnjrdb"),
