@@ -10,8 +10,7 @@ class Solution:
         for num in nums:
             n = num
             temp = 1
-            while n ** 2 in nums:
-                n = n ** 2
+            while (n := n ** 2) in nums:
                 temp += 1
                 longest = max(longest, temp)
 
