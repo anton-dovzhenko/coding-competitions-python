@@ -22,20 +22,17 @@ class Solution:
                 next_level.append(node.right)
                 level_sum += 0 if node.left is None else node.left.val
                 level_sum += 0 if node.right is None else node.right.val
-            level_sums = [level_sum] * len(next_level)
-            for i in range(0, len(next_level)):
-                if i % 2 == 0:
-                    if next_level[i] is not None:
-                        level_sums[i] -= next_level[i].val + (0 if next_level[i + 1] is None else next_level[i + 1].val)
-                else:
-                    if next_level[i] is not None:
-                        level_sums[i] -= next_level[i].val + (0 if next_level[i - 1] is None else next_level[i - 1].val)
             level = []
-            for i in range(0, len(next_level)):
-                if next_level[i] is not None:
-                    next_level[i].val = level_sums[i]
-                    level.append(next_level[i])
-
+            for i in range(0, len(next_level) // 2):
+                i1 = 2 * i
+                i2 = 2 * i + 1
+                node_score = level_sum - (0 if next_level[i1] is None else next_level[i1].val) - (0 if next_level[i2] is None else next_level[i2].val)
+                if next_level[i1] is not None:
+                    next_level[i1].val = node_score
+                    level.append(next_level[i1])
+                if next_level[i2] is not None:
+                    next_level[i2].val = node_score
+                    level.append(next_level[i2])
         return root
 
 
