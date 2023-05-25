@@ -17,7 +17,7 @@ class Solution:
 
 class SolutionTest(unittest.TestCase):
 
-    def test_getSubarrayBeauty(self):
+    def test_minLength(self):
         self.assertEqual(Solution().minLength("ABFCACDB"), 2)
         self.assertEqual(Solution().minLength("ACBBD"), 5)
 
